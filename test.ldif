@@ -23,6 +23,3 @@ sn: Nguyen
 userPassword: Welcome@123
 mail:dnguyen@f5.test
 objectClass: inetOrgPerson
-objectClass: posixAccount
-objectClass: top
-objectClass: shadowAccount

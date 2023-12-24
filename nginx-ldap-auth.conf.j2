@@ -10,7 +10,7 @@ http {
     # Change the IP address if the daemon is not running on the
     # same host as NGINX/NGINX Plus.
     upstream backend {
-        server localhost:9000;
+        server {{ ldapdaemon_cname }}:9000;
     }
 
     # NGINX/NGINX Plus listen on port 8081 for requests that require
@@ -44,7 +44,7 @@ http {
             # in nginx-ldap-auth-daemon.py.
             # Change the IP address if the daemon is not running on
             # the same host as NGINX/NGINX Plus.
-            proxy_pass http://localhost:8888;
+            proxy_pass http://{{ ldapdaemon_cname }}:8888;
 
             proxy_pass_request_body off;
             proxy_pass_request_headers off;

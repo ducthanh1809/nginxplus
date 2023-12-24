@@ -1,0 +1,16 @@
+dn: ou=users,dc=f5,dc=demo,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+dn: ou=groups,dc=f5,dc=demo,dc=local
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=thanhnd,ou=users,dc=f5,dc=demo,dc=local
+objectclass: inetOrgPerson
+cn: thanhnd
+sn: thanhnd
+uid: thanhnd
+userPassword: Welcome@123

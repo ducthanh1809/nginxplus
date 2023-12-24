@@ -81,7 +81,7 @@ server {
 
         # (Required) Set the Base DN, by replacing the value enclosed in
         # double quotes.
-        proxy_set_header X-Ldap-BaseDN   "cn=users,{{ldapcn}}";
+        proxy_set_header X-Ldap-BaseDN   "ou=users,{{ldapcn}}";
 
         # (Required) Set the Bind DN, by replacing the value enclosed in
         # double quotes.

@@ -8,9 +8,21 @@ objectClass: top
 objectClass: organizationalUnit
 ou: groups
 
-dn: cn=thanhnd,ou=users,dc=f5,dc=demo,dc=local
-objectclass: inetOrgPerson
+dn: cn=thanhnd,ou=groups,dc=f5,dc=demo,dc=local
+objectClass: posixGroup
+objectClass: top
 cn: thanhnd
-sn: thanhnd
+gidNumber: 1001
+description: "My Group"
+
+dn: uid=thanhnd,ou=users,dc=f5,dc=demo,dc=local
 uid: thanhnd
+cn: thanhnd
+givenName: Thanh
+sn: Nguyen
 userPassword: Welcome@123
+mail:dnguyen@f5.test
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount

@@ -76,7 +76,7 @@ http {
             # (Required) Set the URL and port for connecting to the LDAP server,
             # by replacing 'example.com'.
             # Do not mix ldaps-style URL and X-Ldap-Starttls as it will not work.
-            proxy_set_header X-Ldap-URL      "ldap://{{url}}";
+            proxy_set_header X-Ldap-URL      "ldap://{{ openldap_cname }}";
 
             # (Optional) Establish a TLS-enabled LDAP session after binding to the
             # LDAP server.
@@ -86,7 +86,7 @@ http {
 
             # (Required) Set the Base DN, by replacing the value enclosed in
             # double quotes.
-            proxy_set_header X-Ldap-BaseDN   "cn=Users,{{ldapcn}}";
+            proxy_set_header X-Ldap-BaseDN   "cn=users,{{ldapcn}}";
 
             # (Required) Set the Bind DN, by replacing the value enclosed in
             # double quotes.

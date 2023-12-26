@@ -5,7 +5,7 @@ proxy_cache_path cache/  keys_zone=auth_cache:10m;
 # Change the IP address if the daemon is not running on the
 # same host as NGINX/NGINX Plus.
 upstream backend {
-    server {{ ldapdaemon_cname }}:9000;
+    server {{ python3_backend }}:9000;
 }
 
 # NGINX/NGINX Plus listen on port 8081 for requests that require

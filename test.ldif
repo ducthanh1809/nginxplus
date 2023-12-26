@@ -23,3 +23,21 @@ sn: Nguyen
 userPassword: Welcome@123
 mail:dnguyen@f5.test
 objectClass: inetOrgPerson
+
+dn: uid=thanhnd01,ou=users,dc=f5,dc=demo,dc=local
+uid: thanhnd01
+cn: thanhnd01
+givenName: Thanh
+sn: Nguyen
+userPassword: Welcome@123
+mail:dnguyen@f5.test
+objectClass: inetOrgPerson
+
+dn: uid=thanhnd02,ou=groups,dc=f5,dc=demo,dc=local
+uid: thanhnd02
+cn: thanhnd02
+givenName: Thanh
+sn: Nguyen
+userPassword: Welcome@123
+mail:dnguyen@f5.test
+objectClass: inetOrgPerson
